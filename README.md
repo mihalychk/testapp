@@ -7,7 +7,7 @@
 - When logged in, user can see a list of his meals and calories, user enters calories manually, also user should be able to edit and delete records.
 - Each entry has a date, time, text, and num of calories
 - Filter by dates from-to, time from-to.
-- User setting – Expected number of calories per day.
+- User setting — Expected number of calories per day.
 - When displayed, it goes green if the total for that day is less than expected number of calories per day, otherwise goes red.
 - REST API.
 
@@ -34,9 +34,9 @@ Results data: null, array or object. Errors data: null or array.
 
 Input: no params
 Output:
-	- HTTP 200 if ok,
-	- HTTP 403 if no access,
-	- HTTP 401 in token is invalid
+- HTTP 200 if ok,
+- HTTP 403 if no access,
+- HTTP 401 in token is invalid
 
 ```json
 {
@@ -82,8 +82,8 @@ Input:
 ```
 
 Output:
-	- HTTP 200 if ok,
-	- HTTP 400 if error
+- HTTP 200 if ok,
+- HTTP 400 if error
 
 ```json
 {
@@ -129,8 +129,8 @@ Input:
 ```
 
 Output:
-	- HTTP 200 if ok,
-	- HTTP 400 if error
+- HTTP 200 if ok,
+- HTTP 400 if error
 
 ```json
 {
