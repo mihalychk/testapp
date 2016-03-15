@@ -20,10 +20,12 @@ API uses Phalcon Framework [https://phalconphp.com/en/], installation process de
 
 ```json
 {
-	"result" : null, // Results data: null, array or object
-	"errors" : null, // Errors data: null or array
+	"result" : null,
+	"errors" : null
 }
 ```
+
+Results data: null, array or object. Errors data: null or array.
 
 
 ## AUTH
@@ -39,24 +41,24 @@ Output:
 ```json
 {
 	"User" : {
-		"id"               : 1,					// User's id in DB: int
-		"name"             : "Michael",			// User's name: string
-		"email"            : "email@email.com"	// User's email: string
-		"calories_per_day" : 120.0				// User's daily calories limit
+		"id"               : 1,
+		"name"             : "Michael",
+		"email"            : "email@email.com",
+		"calories_per_day" : 120.0
 	},
 	"Group" : {
-		"id"          : 1,						// Group's id in DB: int
-		"name"        : "Admin",				// Group's name: string
+		"id"          : 1,
+		"name"        : "Admin",
 		"permissions" : [
 			...,
 			{
 				"Permission" : {
 					"id"      : 2,
-					"model"   : "users",		// Model name: users, groups, permissions, records or * wildcard
-					"create"  : 0,				// Permissions: int
-					"read"    : 2,				// 0 — no access, 1 — only to my own records, 2 — to all records
-					"update"  : 0,				//
-					"delete"  : 0				//
+					"model"   : "users",
+					"create"  : 0, 
+					"read"    : 2,
+					"update"  : 0,
+					"delete"  : 0
 				}
 			},
 			...
@@ -64,6 +66,8 @@ Output:
 	}
 }
 ```
+
+Model name: users, groups, permissions, records or * wildcard. Permissions: int, 0 — no access, 1 — only to my own records, 2 — to all records.
 
 
 ### POST `/api/auth` — Login user
@@ -84,30 +88,30 @@ Output:
 ```json
 {
 	"User" : {
-		"id"               : 1,						// User's id in DB: int
-		"name"             : "Michael",				// User's name: string
-		"email"            : "email@email.com"		// User's email: string
-		"calories_per_day" : 120.0					// User's daily calories limit
+		"id"               : 1,
+		"name"             : "Michael",
+		"email"            : "email@email.com",
+		"calories_per_day" : 120.0
 	},
 	"Group" : {
-		"id"          : 1,							// Group's id in DB: int
-		"name"        : "Admin",					// Group's name: string
+		"id"          : 1,
+		"name"        : "Admin",
 		"permissions" : [
 			...,
 			{
 				"Permission" : {
-					"id"      : 2,					// Permission's id in DB: int
-					"model"   : "users",			// Model name: string (users, groups, permissions, records or * wildcard)
-					"create"  : 0,					// Permissions: int
-					"read"    : 2,					// 0 — no access, 1 — only to my own records, 2 — to all records
-					"update"  : 0,					//
-					"delete"  : 0					//
+					"id"      : 2,
+					"model"   : "users",
+					"create"  : 0, 
+					"read"    : 2,
+					"update"  : 0,
+					"delete"  : 0
 				}
 			},
 			...
 		]
 	},
-	"auth_token" : "reeXPWK,P,OwhGRn76vA5IzsgZb"	// Auth token
+	"auth_token" : "reeXPWK,P,OwhGRn76vA5IzsgZb"
 }
 ```
 
@@ -131,30 +135,30 @@ Output:
 ```json
 {
 	"User" : {
-		"id"               : 1,						// User's id in DB: int
-		"name"             : "Michael",				// User's name: string
-		"email"            : "email@email.com"		// User's email: string
-		"calories_per_day" : 120.0					// User's daily calories limit
+		"id"               : 1,
+		"name"             : "Michael",
+		"email"            : "email@email.com",
+		"calories_per_day" : 120.0
 	},
 	"Group" : {
-		"id"          : 1,							// Group's id in DB: int
-		"name"        : "Admin",					// Group's name: string
+		"id"          : 1,
+		"name"        : "Admin",
 		"permissions" : [
 			...,
 			{
 				"Permission" : {
-					"id"      : 2,					// Permission's id in DB: int
-					"model"   : "users",			// Model name: string (users, groups, permissions, records or * wildcard)
-					"create"  : 0,					// Permissions: int
-					"read"    : 2,					// 0 — no access, 1 — only to my own records, 2 — to all records
-					"update"  : 0,					//
-					"delete"  : 0					//
+					"id"      : 2,
+					"model"   : "users",
+					"create"  : 0, 
+					"read"    : 2,
+					"update"  : 0,
+					"delete"  : 0
 				}
 			},
 			...
 		]
 	},
-	"auth_token" : "reeXPWK,P,OwhGRn76vA5IzsgZb"	// Auth token
+	"auth_token" : "reeXPWK,P,OwhGRn76vA5IzsgZb"
 }
 ```
 
@@ -187,24 +191,24 @@ Output:
 ```json
 {
 	"User" : {
-		"id"               : 1,						// User's id in DB: int
-		"name"             : "Michael",				// User's name: string
-		"email"            : "email@email.com"		// User's email: string
-		"calories_per_day" : 120.0					// User's daily calories limit
+		"id"               : 1,
+		"name"             : "Michael",
+		"email"            : "email@email.com",
+		"calories_per_day" : 120.0
 	},
 	"Group" : {
-		"id"          : 4,							// Group's id in DB: int
-		"name"        : "User",						// Group's name: string
+		"id"          : 1,
+		"name"        : "Admin",
 		"permissions" : [
 			...,
 			{
 				"Permission" : {
-					"id"      : 2,					// Permission's id in DB: int
-					"model"   : "users",			// Model name: string (users, groups, permissions, records or * wildcard)
-					"create"  : 0,					// Permissions: int
-					"read"    : 2,					// 0 — no access, 1 — only to my own records, 2 — to all records
-					"update"  : 0,					//
-					"delete"  : 0					//
+					"id"      : 2,
+					"model"   : "users",
+					"create"  : 0, 
+					"read"    : 2,
+					"update"  : 0,
+					"delete"  : 0
 				}
 			},
 			...
@@ -251,9 +255,9 @@ Input:
 ```json
 {
 	"User" : {
-		"name"     : "Michael",				// User's name: string
-		"email"    : "email@email.com"		// User's email, displays only to owner or superuser: string
-		"password" : "password"				// User's password: string
+		"name"     : "Michael",
+		"email"    : "email@email.com",
+		"password" : "password"
 	}
 }
 ```
@@ -267,24 +271,24 @@ Output:
 ```json
 {
 	"User" : {
-		"id"               : 1,						// User's id in DB: int
-		"name"             : "Michael",				// User's name: string
-		"email"            : "email@email.com"		// User's email: string
-		"calories_per_day" : 120.0					// User's daily calories limit
+		"id"               : 1,
+		"name"             : "Michael",
+		"email"            : "email@email.com",
+		"calories_per_day" : 120.0
 	},
 	"Group" : {
-		"id"          : 4,							// Group's id in DB: int
-		"name"        : "User",						// Group's name: string
+		"id"          : 1,
+		"name"        : "Admin",
 		"permissions" : [
 			...,
 			{
 				"Permission" : {
-					"id"      : 2,					// Permission's id in DB: int
-					"model"   : "users",			// Model name: string (users, groups, permissions, records or * wildcard)
-					"create"  : 0,					// Permissions: int
-					"read"    : 2,					// 0 — no access, 1 — only to my own records, 2 — to all records
-					"update"  : 0,					//
-					"delete"  : 0					//
+					"id"      : 2,
+					"model"   : "users",
+					"create"  : 0, 
+					"read"    : 2,
+					"update"  : 0,
+					"delete"  : 0
 				}
 			},
 			...
@@ -301,9 +305,9 @@ Input:
 ```json
 {
 	"User" : {
-		"name"     : "Michael",				// User's name: string
-		"email"    : "email@email.com"		// User's email, displays only to owner or superuser: string
-		"password" : "password"				// User's password: string
+		"name"     : "Michael",	
+		"email"    : "email@email.com",
+		"password" : "password"
 	}
 }
 ```
@@ -318,24 +322,24 @@ Output:
 ```json
 {
 	"User" : {
-		"id"               : 1,						// User's id in DB: int
-		"name"             : "Michael",				// User's name: string
-		"email"            : "email@email.com"		// User's email: string
-		"calories_per_day" : 120.0					// User's daily calories limit
+		"id"               : 1,
+		"name"             : "Michael",
+		"email"            : "email@email.com",
+		"calories_per_day" : 120.0
 	},
 	"Group" : {
-		"id"          : 4,							// Group's id in DB: int
-		"name"        : "User",						// Group's name: string
+		"id"          : 1,
+		"name"        : "Admin",
 		"permissions" : [
 			...,
 			{
 				"Permission" : {
-					"id"      : 2,					// Permission's id in DB: int
-					"model"   : "users",			// Model name: string (users, groups, permissions, records or * wildcard)
-					"create"  : 0,					// Permissions: int
-					"read"    : 2,					// 0 — no access, 1 — only to my own records, 2 — to all records
-					"update"  : 0,					//
-					"delete"  : 0					//
+					"id"      : 2,
+					"model"   : "users",
+					"create"  : 0, 
+					"read"    : 2,
+					"update"  : 0,
+					"delete"  : 0
 				}
 			},
 			...
