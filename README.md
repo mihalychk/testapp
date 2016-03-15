@@ -1,3 +1,16 @@
+# Sample Application “Calories”
+
+### Task
+
+- User must be able to create an account and log in.
+- Implement at least two roles with different permission levels (ie: a regular user would only be able to CRUD on his owned records, a user manager would be able to CRUD users, an admin would be able to CRUD on all records and users, etc.)
+- When logged in, user can see a list of his meals and calories, user enters calories manually, also user should be able to edit and delete records.
+- Each entry has a date, time, text, and num of calories
+- Filter by dates from-to, time from-to.
+- User setting – Expected number of calories per day.
+- When displayed, it goes green if the total for that day is less than expected number of calories per day, otherwise goes red.
+- REST API.
+
 # API
 
 API uses Phalcon Framework [https://phalconphp.com/en/], installation process described here [https://docs.phalconphp.com/en/latest/reference/install.html].
