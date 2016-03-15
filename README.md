@@ -377,21 +377,23 @@ Output:
 ```json
 {
 	"Record" : {
-		"id"       : 1,								// Record's id in DB: int
-		"user_id"  : 4,								// Users's id in DB: int
-		"text"     : "Tasty Burger",				// Meal name: string
-		"datetime" : "2016-03-10T21:00:00+00:00",	// Date & time: string (ISO-8601)
-		"calories" : 10.2							// Calories: float
+		"id"       : 1,
+		"user_id"  : 4,
+		"text"     : "Tasty Burger",
+		"datetime" : "2016-03-10T21:00:00+00:00", 
+		"calories" : 10.2
 	}
 }
 ```
+
+Date & time: string, ISO-8601 [https://en.wikipedia.org/wiki/ISO_8601].
 
 
 ### GET `/api/records` — Returns records list
 
 Input:
 - params `time_from` and `time_to` time in 24 mode with minutes, ex. `18:00`
-- params `date_from` and `date_to` datetime in ISO-8601, ex. `2016-03-10T21:00:00+00:00`
+- params `date_from` and `date_to` datetime in ISO-8601 [https://en.wikipedia.org/wiki/ISO_8601], ex. `2016-03-10T21:00:00+00:00`
 
 Output:
 - HTTP 200 if ok,
@@ -427,9 +429,9 @@ Input:
 ```json
 {
 	"Record" : {
-		"text"     : "Tasty Burger 2",				// Meal name: string
-		"datetime" : "2016-03-10T21:00:00+00:00",	// Date & time: string (ISO-8601)
-		"calories" : 14								// Calories: float
+		"text"     : "Tasty Burger 2",
+		"datetime" : "2016-03-10T21:00:00+00:00",
+		"calories" : 14
 	}
 }
 ```
@@ -443,11 +445,11 @@ Output:
 ```json
 {
 	"Record" : {
-		"id"       : 12,							// Record's id in DB: int
-		"user_id"  : 4,								// Users's id in DB: int
-		"text"     : "Tasty Burger 2",				// Meal name: string
-		"datetime" : "2016-03-10T21:00:00+00:00",	// Date & time: string (ISO-8601)
-		"calories" : 14								// Calories: float
+		"id"       : 12,
+		"user_id"  : 4,
+		"text"     : "Tasty Burger 2",
+		"datetime" : "2016-03-10T21:00:00+00:00",
+		"calories" : 14
 	}
 }
 ```
@@ -460,9 +462,9 @@ Input:
 ```json
 {
 	"Record" : {
-		"text"     : "Tasty Burger",				// Meal name: string
-		"datetime" : "2016-03-10T21:00:00+00:00",	// Date & time: string (ISO-8601)
-		"calories" : 10.2							// Calories: float
+		"text"     : "Tasty Burger",
+		"datetime" : "2016-03-10T21:00:00+00:00",
+		"calories" : 10.2
 	}
 }
 ```
@@ -477,11 +479,11 @@ Output:
 ```json
 {
 	"Record" : {
-		"id"       : 1,								// Record's id in DB: int
-		"user_id"  : 4,								// Users's id in DB: int
-		"text"     : "Tasty Burger",				// Meal name: string
-		"datetime" : "2016-03-10T21:00:00+00:00",	// Date & time: string (ISO-8601)
-		"calories" : 10.2							// Calories: float
+		"id"       : 1,
+		"user_id"  : 4,
+		"text"     : "Tasty Burger",
+		"datetime" : "2016-03-10T21:00:00+00:00",
+		"calories" : 10.2
 	}
 }
 ```
